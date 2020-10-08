@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avaliação</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="layout">
+
+    <section class="q q1">
+      <h3>Media aritimética</h3>
+      <form class="form" onsubmit="return false">
+        <label for="q1-n1">Primeiro número</label>
+        <input 
+          id="q1-n1" type="number" placeholder="Primeiro número" 
+          step="0.0001" required
+        />
+        <label for="q1-n2">Segundo número</label>
+        <input 
+          id="q1-n2" type="number" placeholder="Segundo número"
+          step="0.0001" required
+        />
+        <label for="q1-n3">Terceiro número</label>
+        <input 
+          id="q1-n3" type="number" placeholder="Terceiro número"
+          step="0.0001" required
+        />
+        <button id="q1-btn">Calcular</button>
+        <p id="q1-f"></p>  
+        <label for="q1-r">Média aritimética</label>
+        <input 
+          id="q1-r" type="text" placeholder="Média aritimética"
+          disabled  
+        />
+      </form>
+    </section>
+
+    <section class="q q2">
+      <h3>Aumento</h3>
+      <form class="form" onsubmit="return false">
+        <label for="q2-emp">Nome do funcionário</label>
+        <input 
+          id="q2-emp" type="text" placeholder="Funcionário" required 
+        />
+        <label for="q2-sal">Salário</label>
+        <input 
+          id="q2-sal" type="number" placeholder="Salário" 
+          step="0.01" required
+        />
+        <button id="q2-btn">Calcular</button>
+        <p id="q2-f"></p>
+        <!-- <label for="q2-r">Salário com aumento</label> -->
+        <input id="q2-r" type="text" placeholder="Salário com aumento" disabled />
+      </form>
+    </section>
+
+    <section class="q q3">
+      <h3>A (?) B = C</h3>
+      <form class="form" onsubmit="return false">
+        <label for="q3-a">A</label>
+        <input id="q3-a" type="number" placeholder="A" step="0.0001" required />
+        <label for="q3-b">B</label>
+        <input id="q3-b" type="number" placeholder="B" step="0.0001" required />
+        <button id="q3-btn">Calcular</button>
+        <p id="q3-f"></p>
+        <!-- <label for="q3-c">C</label> -->
+        <input id="q3-c" type="text" placeholder="C" disabled />
+      </form>
+    </section>
+
+    <section class="q q4">
+      <h3>Preço</h3>
+      <form class="form" onsubmit="return false">
+        <label for="q4-p">Preço</label>
+        <input id="q4-p" type="number" placeholder="Preço" required />
+        <label for="q4-s">Número de parcelas</label>
+        <select id="q4-s" required>
+          <option value="0" selected disabled hidden>Número de parcelas</option>
+          <option value="1">À vista</option>
+          <option value="3">3</option>
+          <option value="5">5</option>
+        </select>
+        <button id="q4-btn">Calcular</button>
+        <p id="q4-f"></p>
+        <label for="q4-i">Prestação mensal</label>
+        <input id="q4-i" type="text" placeholder="Prestação mensal" />
+        <label for="q4-t">Total</label>
+        <input id="q4-t" type="text" placeholder="Total" />
+      </form>
+    </section>
+
+    <section class="q q5">
+      <h3>Notas</h3>
+      <form class="form" onsubmit="return false">
+        <label for="q5-name">Nome</label>
+        <input 
+          id="q5-name" type="text" placeholder="Nome" required
+        /> 
+        <label for="q5-grade1">Nota 01</label>
+        <input 
+          id="q5-grade1" type="number" placeholder="Nota 01" 
+          step="0.0001" required
+        />
+        <label for="q5-grade2">Nota 02</label>
+        <input 
+          id="q5-grade2" type="number" placeholder="Nota 02" 
+          step="0.0001" required 
+        />
+        <label for="q5-grade3">Nota 03</label>
+        <input 
+          id="q5-grade3" type="number" placeholder="Nota 03" 
+          step="0.0001" required 
+        />
+        <button id="q5-btn">Calcular</button>
+        <p id="q5-f"></p> 
+        <label for="q5-r">Média final</label>
+        <input id="q5-r" type="text" placeholder="Média final" />
+      </form>
+    </section>
+
+    <section class="q q6">
+      <h3>Coringa</h3>
+      <form class="form" onsubmit="return false">
+        <label for="q6-n1">Número 1</label>
+        <input 
+          id="q6-n1" type="number" placeholder="Número 01" 
+          step="0.0001" required
+        />
+        <label for="q6-n2">Número 2</label>
+        <input 
+          id="q6-n2" type="number" placeholder="Número 02"
+          step="0.0001" required 
+        />
+        <label for="q6-s">Código</label>
+        <select id="q6-s">
+          <option value="0" selected disabled hidden>Código</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        <button id="q6-btn">Calcular</button>
+        <p id="q6-f"></p>
+        <label for="q6-r">Resultado</label>
+        <input id="q6-r" type="text" placeholder="Resultado" />
+      </form>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
